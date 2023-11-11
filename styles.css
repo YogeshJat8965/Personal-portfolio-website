@@ -94,18 +94,6 @@ a{
     padding-bottom: 8rem;    
 }
 
-/* .faded-text{
-    position:absolute;
-    user-select:none;
-    font-size: 7em;
-    color:rgb(231,231,231);
-    
-    bottom: -16%;
-    left: -5%;
-    font-weight: bold;
-    transition: all 3s;
-} */
-
 .hero-section-left{
     /* width:100%; */
     display: flex;
@@ -518,6 +506,7 @@ a{
     }
     .project-sub-heading {
       width: 100%;
+      font-size: 20px;
     }
     #project2 {
       margin-left: 0;
