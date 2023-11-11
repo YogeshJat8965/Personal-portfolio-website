@@ -94,6 +94,18 @@ a{
     padding-bottom: 8rem;    
 }
 
+/* .faded-text{
+    position:absolute;
+    user-select:none;
+    font-size: 7em;
+    color:rgb(231,231,231);
+    
+    bottom: -16%;
+    left: -5%;
+    font-weight: bold;
+    transition: all 3s;
+} */
+
 .hero-section-left{
     /* width:100%; */
     display: flex;
@@ -314,14 +326,26 @@ a{
     gap:120px;
   }
 
-  .project-card{  
+  .project-card{
     width:90%;
     height:550px;
-    background-image: repeat 0 0;
+    background-image: url() repeat 0 0;
     background-size: cover;
     /* background-repeat: no-repeat; */
     position:relative;
     box-shadow:0px 0px 40px #1f1f1f;
+  }
+
+  .project-card::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: #1f1f1f9a;
+    z-index:0;
+    /* transform: scaleX(1); */
   }
 
   .project-card::before{
@@ -408,7 +432,7 @@ a{
   
   .project-subHeading{
     width:70%;
-    font-size:20px;
+    font-size:16px;
     font-style: italic;
   }
 
@@ -492,9 +516,8 @@ a{
       font-size: 40px;
       width: 100%;
     }
-    .project-subHeading{
+    .project-sub-heading {
       width: 100%;
-      font-size: 20px;
     }
     #project2 {
       margin-left: 0;
@@ -554,6 +577,62 @@ a{
       height: 180px;
     }
   }
+
+  /* .skills-container{
+    position:relative;
+    display:flex;
+    padding:5rem;
+    margin:10rem auto;
+    gap:30px;
+  }
+
+.skill-container-left{
+  font-family: 'Sacramento', cursive;
+  width:50%;
+  display:flex;
+  flex-direction:column;
+}
+
+.skill-container-right{
+  display:flex;
+  flex-wrap:wrap;
+  width:50%;
+  position:relative;
+  gap:2rem;
+  justify-content: center;
+}
+
+.skill-fade-text{
+  position:absolute;
+  font-size:15em;
+  font-style:bold;
+  color:rgb(231,231,231);
+  bottom:-34.5%;
+  right:-25%;
+  user-select:none;
+  overflow-y:hidden;
+}
+
+.blob-style{
+  position:absolute;
+  top:50%;
+  left:50%;
+  z-index:-5;
+  transform:translate(-50%, -50%);
+  animation: blobAnimate 3s linear infinite;
+}
+
+@keyframes blobAnimate {
+  50%{
+    top:54%;
+    left:46%;
+  }
+} */
+
+.mySkillContainer{
+  background-color: rgb(14,67,97);
+  /* height: auto; */
+}
 
 .mySkillHeading{
   position: relative;
