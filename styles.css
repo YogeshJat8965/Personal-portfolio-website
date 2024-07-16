@@ -1,4 +1,4 @@
-
+ 
 
 @font-face{
   font-family: customFonts1;
@@ -329,7 +329,7 @@ a{
   .project-card{
     width:90%;
     height:550px;
-/*     background-image: url() repeat 0 0; */
+    /* background-image: url() repeat 0 0; */
     background-size: cover;
     /* background-repeat: no-repeat; */
     position:relative;
@@ -347,6 +347,7 @@ a{
     z-index:0;
     /* transform: scaleX(1); */
   }
+
   .project-card::before{
     content:"";
     position:absolute;
@@ -472,8 +473,11 @@ a{
     background-image: url(https://codingartistweb.com/wp-content/uploads/2021/03/random-password-generator-01.png);
     background-size: cover;
   }
-  #project3{
+  /* #project3{
     background-image: url(https://149842033.v2.pressablecdn.com/wp-content/uploads/2020/05/PersonalPortfolio.jpg);
+  } */
+  #project3{
+    background-image: url(images1/onlineShoping.png);
   }
   #project4{
     margin-left:120px;
